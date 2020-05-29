@@ -81,6 +81,7 @@ int32_t dnodeInitSystem() {
 
   dnodeStartModules();
   dnodeSetRunStatus(TSDB_DNODE_RUN_STATUS_RUNING);
+  dnodeStartStream();
 
   dPrint("TDengine is initialized successfully");
 
